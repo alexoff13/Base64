@@ -59,4 +59,3 @@ string CodeBase64(string line,Table table){
     }
     return res;
 }
-#include "libBase64.h"
