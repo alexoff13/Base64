@@ -8,7 +8,8 @@ int main() {
     string line;
     cout<<"Coding or Decoding? 1/2"<<endl;
     cin>>i;
-    cout<<"Enter the text:";
-    cin>>line;
+    cin.ignore();
+    cout<<"Enter the text:"<<endl;
+    getline(cin, line);
     i==1? cout<<CodeBase64(line,Base64):cout<<CodeBase64(line,ASCII);
 }
